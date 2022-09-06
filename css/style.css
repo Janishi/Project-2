@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
+
 }
 body{
     padding-top: 80px;
@@ -48,4 +49,38 @@ li a:hover {
 
 .navigation { 
     margin-left: 50px;
+}
+
+/* footer styles */
+
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 20px 45px;
+}
+
+.footer-wrapper {
+    padding: 20px;
+}
+
+.symbols {
+    display: flex;
+    justify-content: center;
+    gap: 15em;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter {
+    color: white;
+    font-size: 35px;
+
+}
+
+.banner {
+    background-image: url(../image/banner.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
