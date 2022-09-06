@@ -5,6 +5,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
 
 }
 body{
@@ -21,7 +22,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 20px 45px;
+    padding: 25px 35px;
     
 }
 
