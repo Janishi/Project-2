@@ -1,0 +1,51 @@
+/* header styles */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+body{
+    padding-top: 80px;
+}
+
+.fa-house {
+    font-size: 30px;
+    color: white;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 20px 45px;
+    
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    transition: all 1s ease;
+
+}
+
+
+li {
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+}
+
+
+li a:hover {
+    color: white;
+}
+
+.navigation { 
+    margin-left: 50px;
+}
