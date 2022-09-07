@@ -1,0 +1,40 @@
+@media  (max-width: 480px) {
+
+    .navigation {
+        display: none;
+    }
+
+    .navigation.active {
+
+        display: block;
+    }
+
+    .burger {
+        display: block;
+    }
+    .header-wrapper{
+        flex-direction: column;
+        
+    
+        
+    }
+
+    ul {
+        flex-direction: column;
+        margin-top: 50px;
+       
+    }
+    
+    .footer-wrapper{
+        flex-direction: column;
+        
+    }
+
+    .symbols {
+        flex-direction: row;
+        align-items: center;
+        gap: 3em;
+    }
+
+    
+}
