@@ -9,7 +9,7 @@
         display: block;
     }
 
-    .burger {
+    .toggle-menu {
         display: block;
     }
     .header-wrapper{
@@ -21,6 +21,7 @@
 
     ul {
         flex-direction: column;
+        align-items: center;
         margin-top: 50px;
        
     }

@@ -22,7 +22,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    padding: 25px 35px;
+    padding: 25px 25px;
     
 }
 
@@ -100,4 +100,51 @@ footer{
 
 .navigation.active {
     display: block;
+}
+
+/* animation burger styles */
+
+.toggle-menu {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 35px;
+    height: 35px;
+    /* background-color: black; */
+    display: none;
+    cursor: pointer;
+    
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.line1 {
+    top: 25%;
+}
+
+.line3 {
+    top: 75%;
+}
+
+.active-burger .line1 {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.active-burger .line2 {
+    display: none;
+}
+
+.active-burger .line3 {
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
 }
