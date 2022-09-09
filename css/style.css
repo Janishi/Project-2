@@ -17,6 +17,11 @@ body{
     color: white;
 }
 
+.fa-chevron-down {
+    font-size: 15px;
+    color: #FFF;
+}
+
 .header-wrapper {
     display: flex;
     justify-content: space-between;
@@ -52,6 +57,11 @@ li a:hover {
     margin-left: 50px;
 }
 
+
+.project-window.pro-active {
+    display: block;
+}
+
 /* footer styles */
 
 footer{
@@ -71,8 +81,9 @@ footer{
 }
 
 .fa-facebook, .fa-instagram, .fa-twitter {
-    color: white;
-    font-size: 35px;
+    color: #10d4ce;
+    font-size: 25px;
+    cursor: pointer;
 
 }
 
@@ -147,4 +158,75 @@ footer{
 .active-burger .line3 {
     top: 50%;
     transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+/* Project and work */
+
+.project-window {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(65, 63, 63);
+    display: none;
+    
+
+}
+
+.project-wrapper {
+    position: relative;
+    display: flex;
+    padding: 35px;
+    
+    
+}
+.project1 {
+    font-family: 'Poppins';
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    
+}
+.project2 {
+    font-family: 'Poppins';
+    position: absolute;
+    top: 50%;
+    left: 850px;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.portofio {
+    color: #10d4ce;
+}
+.portofio:hover{
+    color: #fff;
+}
+
+.work-window {
+    width: 100%;
+    background-color: rgb(65, 63, 63);
+    height: 200px;
+    display: none;
+}
+
+.work-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+    
+}
+.work-class {
+    font-family: 'Poppins';
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+
+.work-window.work-active{
+    display: block;
 }
