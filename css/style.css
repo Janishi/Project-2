@@ -168,7 +168,9 @@ footer{
     height: 100px;
     background-color: rgb(65, 63, 63);
     display: none;
+   
     
+     
 
 }
 
@@ -176,6 +178,7 @@ footer{
     position: relative;
     display: flex;
     padding: 35px;
+    
     
     
 }
@@ -189,6 +192,10 @@ footer{
     text-transform: uppercase;
     
 }
+
+.project1:hover {
+    color:#10d4ce;
+}
 .project2 {
     font-family: 'Poppins';
     position: absolute;
@@ -197,6 +204,10 @@ footer{
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
+}
+
+.project2:hover{
+    color:#10d4ce;
 }
 
 .portofio {
@@ -216,7 +227,7 @@ footer{
 .work-wrapper {
     display: flex;
     justify-content: space-around;
-    padding: 35px;
+    padding: 50px;
     
 }
 .work-class {
@@ -226,7 +237,62 @@ footer{
     text-transform: uppercase;
     
 }
+.work-class:hover{
+    color:#10d4ce;
+}
 
 .work-window.work-active{
     display: block;
+    
+}
+
+/* photo carusel */
+
+.photo-wrapper {
+    position: relative;
+    background-color: #FFF;
+    /* width: 100%;
+    height: 10; */
+}
+
+.slide {
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* .slider-content {
+    position: relative;
+} */
+
+.arrows {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+    font-size: 30px;
+    border: none;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrow-left {
+    position: absolute;
+    left: 30px;
+}
+
+.arrow-right {
+    right: 30px;
+}
+
+.slider-title {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
