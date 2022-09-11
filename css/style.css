@@ -261,7 +261,8 @@ footer{
 
 .slide img {
     width: 100%;
-    object-fit: cover;
+    height: 500px;
+    object-fit: contain;
 }
 
 /* .slider-content {
@@ -281,6 +282,12 @@ footer{
     transform: translateY(-50%);
     cursor: pointer;
 }
+.fa-chevron-left{
+    font-size: 25px;
+}
+.fa-chevron-right{
+    font-size: 25px;
+}
 
 .arrow-left {
     position: absolute;
@@ -295,4 +302,37 @@ footer{
     position: absolute;
     top: 20px;
     right: 20px;
+    
+}
+
+.slider-content {
+    font-family: 'Poppins';
+    font-size: 30px;
+    color: #10d4ce;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    
+}
+
+.dotChild {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(65, 61, 61);
+    border-radius: 50%;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.dotChild.active-dot{
+    background-color: #10d4ce;
+    border: 1px solid #087a77;
+}
+.dotsPerent {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
 }
