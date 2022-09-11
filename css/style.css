@@ -321,8 +321,8 @@ footer{
 }
 
 .dotChild.active-dot{
-    background-color: #10d4ce;
-    border: 1px solid #087a77;
+    background-color: #08837f;
+    border: 1px solid white;
 }
 .dotsPerent {
     display: flex;
