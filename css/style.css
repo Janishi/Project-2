@@ -360,11 +360,14 @@ footer{
     font-size: 20px;
     color: #067a77;
     text-align: left;
+    
 }
 
 #username, #email, #passw, #passw2 {
     width: 250px;
     border-radius: 5px;
+    outline-color: #087e7a;
+    border: 2px solid #067a77
 }
 .label-username{
     margin-right: 85px;
