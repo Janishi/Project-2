@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project 2">
+    <meta name="author" content="Giorgi Janiashvili">
+    <title>Project 2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+            <div class="header-wrapper">
+                <a href="index.html"><i class="fa-solid fa-house"></i></a> 
+                <nav class="navigation" id="nav-id">
+                    <ul>
+                        <li>
+                            <a class="portofio" href="about.html">About Me</a>
+                        </li>
+                        <li class="project" id="project">
+                            <span class="portofio">Portfolio <i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+                        </li>
+                        
+                        <li class="work" id="work">
+                            <span class="portofio">Features <i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+                        </li>
+                        <li>
+                            <a class="portofio" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>   
+                <!-- <div class="burger" id="burger-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div> -->
+
+                
+                <div class="toggle-menu" id="toggle-wrapper">
+                    <div class="line line1"></div>
+                    <div class="line line2"></div>
+                    <div class="line line3"></div>
+                </div>
+            </div>
+            <div class="project-window" id="pro-win">
+                <div class="project-wrapper">
+                    <div>
+                        <a class="project1 project-class" href="https://janishi.github.io/Project-1/" target="_blank">Project1</a>
+                    </div>
+                    <div>
+                        <a class="project2 project-class" href="https://janishi.github.io/Project-2/">Project2</a>
+                    </div>
+                </div>
+             
+
+            </div>
+
+            <div class="work-window" id="work-win">
+                <div class="work-wrapper">
+                    <div>
+                        <a class="work-class" href="photo.html">photo carousel</a>
+                    </div>
+                    <div>
+                        <a class="work-class" href="#">accordion </a>
+                    </div>
+                    <div>
+                        <a class="work-class" href="#">Form Validations </a>
+                    </div>
+                    <div>
+                        <a class="work-class" href="#">TO Do list</a>
+                    </div>
+                    <div>
+                        <a class="work-class" href="#">Filter</a>
+                    </div>
+                    
+                </div>
+            </div> 
+
+
+    </header>
+    
+    <section>
+        <h2 class="h2">Form Validation</h2>
+        <div class="form-wrapper">
+            
+            <form action="" method="" id="registration">
+                <div class="username-style">
+                    <label class="label-username" for="username">username</label>
+                    <input type="text" id="username" name="username" placeholder="username">
+                    <div class="error-text" id="error_username"></div>
+                </div>
+                <div class="email-style">
+                    <label class="label-email" for="email">Email</label>
+                    <input type="email" id="email" name="myemail" placeholder="Email">
+                    <div class="error-text" id="error_myemail"></div>
+                </div>
+                <div class="password-style">
+                    <label class="label-passw1" for="passw">Password</label>
+                    <input type="password" id="passw" name="password" placeholder="password">
+                </div>
+                <div class="password-style">
+                    <label class="label-passw2" for="passw2">Repeat Password</label>
+                    <input type="password" id="passw2" name="password2" placeholder="Repeat Password">
+                    <div class="error-text" id="error_password2"></div>
+                </div>
+                
+                <div class="radio-checkbox">
+                    <input type="radio" name="gender">
+                    <label for="">Male</label>
+                    <input type="radio" name="gender">
+                    <label for="">Female</label>
+                    <div class="error-text" id="error_gender"></div>
+                </div>
+                <div class="radio-checkbox">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="">I agree terms and conditions</label>
+                    <div class="error-text" id="error_agree"></div>
+
+                </div>
+                <button class="form-button" type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer>
+
+        <div class="footer-wrapper">
+            <div class="symbols">
+                <div><i class="fa-brands fa-facebook"></i></div>
+                <div><i class="fa-brands fa-instagram"></i></div>
+                <div><i class="fa-brands fa-twitter"></i></div>
+
+             </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>

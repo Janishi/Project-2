@@ -18,10 +18,13 @@ projects.addEventListener('click', function(){
     workWindow.classList.remove('work-active');
 });
 
+
 works.addEventListener('click', function(){
     workWindow.classList.toggle('work-active');
     prowin.classList.remove('pro-active');
 });
+
+
 
 // photo carusel
 

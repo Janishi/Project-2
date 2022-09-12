@@ -331,3 +331,60 @@ footer{
     transform: translateX(-50%);
     bottom: 30px;
 }
+
+/* form validation styles */
+
+.form-wrapper {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.h2{
+    font-family: 'Poppins';
+    font-size: 35px;
+    letter-spacing: 18px;
+    text-align: center;
+    margin-top: 35px;
+    color: #08837f;
+    text-transform: uppercase;
+}
+
+.username-style, .email-style, .password-style, .radio-checkbox {
+    margin-bottom: 25px;
+    font-family: 'Poppins';
+    font-size: 20px;
+    color: #067a77;
+    text-align: left;
+}
+
+#username, #email, #passw, #passw2 {
+    width: 250px;
+    border-radius: 5px;
+}
+.label-username{
+    margin-right: 85px;
+}
+.label-email{
+    margin-right: 135px;
+}
+.label-passw1{
+    margin-right: 95px;
+}
+.label-passw2{
+    margin-right: 15px;
+}
+.form-button{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #067a77;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+}
