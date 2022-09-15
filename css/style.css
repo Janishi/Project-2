@@ -334,7 +334,7 @@ footer{
 
 /* form validation styles */
 
-.form-wrapper {
+.form-wrapper{
     width: 100%;
     height: 70vh;
     display: flex;
@@ -390,4 +390,38 @@ footer{
     color: #fff;
     font-size: 20px;
     border: none;
+}
+
+.error-text{
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.showhide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+}
+#showihideicon{
+    width: 250px;
+    border-radius: 5px;
+    outline-color: #087e7a;
+    border: 2px solid #067a77
+}
+
+.showicon {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #08837f;
+    text-transform: uppercase;
+    margin-right: 15px;
+
+}
+
+.fa-eye {
+    color: #067a77;
+    margin-left: 15px;
+    cursor: pointer;
 }
