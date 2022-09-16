@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     
-     
 </head>
 <body>
     <!-- header -->
@@ -87,62 +86,15 @@
     </header>
     
     <section>
-        <h2 class="h2">Form Validation</h2>
-        <div class="form-wrapper">
-            
-            <form action="" method="POST" id="registration">
-                <div class="username-style">
-                    <label class="label-username" for="username">username</label>
-                    <input class="placeholder-style" type="text" id="username" name="username" placeholder="username">
-                    <div class="error-text" id="error_username"></div>
-                </div>
-                
-                <div class="password-style">
-                    <label class="label-passw1" for="passw">Password</label>
-                    <input class="placeholder-style" type="password" id="passw" name="password" placeholder="password">
-                    <div class="error-text" id="error_password"></div>
-                </div>
-                <div class="password-style">
-                    <label class="label-passw2" for="passw2">Repeat Password</label>
-                    <input class="placeholder-style" type="password" id="passw2" name="password2" placeholder="Repeat Password">
-                    <div class="error-text" id="error_password2"></div>
-                </div>
-                
-                <div class="radio-checkbox">
-                    <input type="radio" name="gender">
-                    <label for="">Male</label>
-                    <input type="radio" name="gender">
-                    <label for="">Female</label>
-                    <div class="error-text" id="error_gender"></div>
-                </div>
-                <div class="radio-checkbox">
-                    <input type="checkbox" name="agree" id="agree">
-                    <label for="">I agree terms and conditions</label>
-                    <div class="error-text" id="error_agree"></div>
+        <h3 class="server-title">Requested and responsed data</h3>
+        <div class="post-wrapper" id="post-wrapper">
 
-                </div>
-                <button class="form-button" type="submit">Submit</button>
-                
-            </form>
-            
+            <div class="overlay" id="overlay">
+                <div class="content" id="content"></div>
+                <span class="overlay-close"  id="overlay-close"><i class="fa-solid fa-xmark"></i></span>
+
+            </div>
         </div>
-        <div class="showhide">
-            <label class="showicon" for="mypassicon">Show & hide icon</label>
-            <input type="password" id="showihideicon" name="mypassicon" placeholder="type password">
-            <i id="icon" class="fa-solid fa-eye"></i>
-        </div>
-        <div class="email-margin">
-            <form action="" id="form-email-validation">
-                <div class="email-style">
-                    <label class="label-email" for="email" >Email</label>
-                    <input class="placeholder-style" type="email" id="email" name="myemail" placeholder="type your email" onkeydown="emailValidation()">
-                    <div class="email-span" id="email-validation"></div>
-                </div>
-                <button class="email-send">send</button>
-            </form>
-        </div>
-        
-        
     </section>
 
 
@@ -161,8 +113,7 @@
         </div>
 
     </footer>
-    
-    <script src="script.js"></script>
-    <script src="validation.js"></script>
+    <script src="script.js"></script> 
+    <script src="server.js"></script>
 </body>
 </html>

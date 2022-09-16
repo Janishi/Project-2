@@ -407,6 +407,7 @@ footer{
     align-items: center;
     margin-bottom: 90px;
     
+    
 }
 #showihideicon{
     width: 250px;
@@ -491,4 +492,82 @@ footer{
     color: #fff;
     font-size: 15px;
     border: none;
+}
+
+/* req. & resp. server styles */
+
+.posts {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    max-width: 650px;
+    width: 100%;
+    background-color: #337774;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    color:#FFF;
+    font-style: italic;
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+
+.post-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    
+    
+}
+
+.server-title {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    margin-top: 70px;
+    text-align: center;
+    color:#067a77;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #264241;
+    border-radius: 25px;
+    display: none;
+    z-index: 3;
+    
+
+}
+.overlay.active {
+    display:  block;
+}
+
+.overlay-close {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    font-size: 30px;
+    color:#FFF;
+    cursor: pointer;
+    
+}
+
+.overlay-button {
+    font-family: 'Poppins';
+    position: absolute;
+    right: 7px;
+    bottom: 7px;
+    color:  #073836;
+    font-size: 12px;
+    border-radius: 15px;
+    border: 1px solid #0c5c59;
+    cursor: pointer;
 }
