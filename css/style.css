@@ -536,8 +536,7 @@ footer{
 .overlay {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 70%;
     height: 50%;
     background-color: #264241;
     border-radius: 25px;
@@ -548,6 +547,7 @@ footer{
 }
 .overlay.active {
     display:  block;
+    
 }
 
 .overlay-close {
@@ -571,3 +571,18 @@ footer{
     border: 1px solid #0c5c59;
     cursor: pointer;
 }
+
+
+
+.gotdata-body {
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

@@ -1,6 +1,7 @@
 let mainPostWrapper = document.getElementById('post-wrapper');
 let overlay = document.getElementById('overlay');
 let close = document.getElementById('overlay-close');
+let content = document.getElementById('content'); 
 
 function ajax (url, callback){
 
@@ -58,13 +59,21 @@ function openOverlay(id){
     overlay.classList.add('active');
     let url = `https://jsonplaceholder.typicode.com/posts/${id}`;
     ajax(url, function(data){
-        console.log(data);
+        overlayFunction(data);
     });
     
 }
 
+function overlayFunction (item){
+    let description = document.createElement('p');
+    description.innerText = item.body;
+    description.classList.add('gotdata-body');
+    content.appendChild(description);
+}
+
 close.addEventListener('click', function(){
     overlay.classList.remove('active');
+    content.innerHTML = '';
 });
 
 
