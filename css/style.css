@@ -168,6 +168,9 @@ footer{
     height: 100px;
     background-color: rgb(65, 63, 63);
     display: none;
+    box-shadow: 4px 4px 7px #6a7272;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
    
     
      
@@ -223,6 +226,9 @@ footer{
     background-color: rgb(65, 63, 63);
     height: 200px;
     display: none;
+    box-shadow: 4px 4px 7px #6a7272;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 
 .work-wrapper {
@@ -542,6 +548,7 @@ footer{
     border-radius: 25px;
     display: none;
     z-index: 3;
+    box-shadow: 4px 4px 7px #6a7272;
     
 
 }
