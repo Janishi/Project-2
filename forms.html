@@ -93,22 +93,18 @@
             <form action="" method="POST" id="registration">
                 <div class="username-style">
                     <label class="label-username" for="username">username</label>
-                    <input type="text" id="username" name="username" placeholder="username">
+                    <input class="placeholder-style" type="text" id="username" name="username" placeholder="username">
                     <div class="error-text" id="error_username"></div>
                 </div>
-                <div class="email-style">
-                    <label class="label-email" for="email">Email</label>
-                    <input type="email" id="email" name="myemail" placeholder="Email">
-                    <div class="error-text" id="error_myemail"></div>
-                </div>
+                
                 <div class="password-style">
                     <label class="label-passw1" for="passw">Password</label>
-                    <input type="password" id="passw" name="password" placeholder="password">
+                    <input class="placeholder-style" type="password" id="passw" name="password" placeholder="password">
                     <div class="error-text" id="error_password"></div>
                 </div>
                 <div class="password-style">
                     <label class="label-passw2" for="passw2">Repeat Password</label>
-                    <input type="password" id="passw2" name="password2" placeholder="Repeat Password">
+                    <input class="placeholder-style" type="password" id="passw2" name="password2" placeholder="Repeat Password">
                     <div class="error-text" id="error_password2"></div>
                 </div>
                 
@@ -132,9 +128,21 @@
         </div>
         <div class="showhide">
             <label class="showicon" for="mypassicon">Show & hide icon</label>
-            <input type="password" id="showihideicon" name="mypassicon">
+            <input type="password" id="showihideicon" name="mypassicon" placeholder="type password">
             <i id="icon" class="fa-solid fa-eye"></i>
         </div>
+        <div class="email-margin">
+            <form action="" id="form-email-validation">
+                <div class="email-style">
+                    <label class="label-email" for="email" >Email</label>
+                    <input class="placeholder-style" type="email" id="email" name="myemail" placeholder="type your email" onkeydown="emailValidation()">
+                    <div class="email-span" id="email-validation"></div>
+                </div>
+                <button class="email-send">send</button>
+            </form>
+        </div>
+        
+        
     </section>
 
 

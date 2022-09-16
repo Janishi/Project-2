@@ -212,6 +212,7 @@ footer{
 
 .portofio {
     color: #10d4ce;
+    
 }
 .portofio:hover{
     color: #fff;
@@ -398,17 +399,24 @@ footer{
     margin-top: 10px;
     text-transform: uppercase;
 }
+
+/* show & Hide styles */
 .showhide {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 90px;
+    
 }
 #showihideicon{
     width: 250px;
     border-radius: 5px;
     outline-color: #087e7a;
-    border: 2px solid #067a77
+    border: 2px solid #067a77;
+}
+#showihideicon::placeholder{
+    color: #658f8f;
+    font-style: italic;
 }
 
 .showicon {
@@ -416,12 +424,71 @@ footer{
     font-size: 15px;
     color: #08837f;
     text-transform: uppercase;
-    margin-right: 15px;
+    margin-right: 75px;
 
 }
 
-.fa-eye {
+.fa-eye, .fa-eye-slash {
     color: #067a77;
     margin-left: 15px;
     cursor: pointer;
+}
+.placeholder-style::placeholder{
+    color: #658f8f;
+    font-style: italic;
+    
+    
+}
+
+/* email validation style */
+
+.email-style{
+    position: relative;
+    
+}
+
+.email-margin {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+#form-email-validation.invalid .email-style::before{
+    content: '\2612';
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+#form-email-validation.valid .email-style::before{
+    content: '\2611';
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+.email-span{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+
+
+#email {
+    width: 250px;
+    border-radius: 5px;
+    outline-color: #087e7a;
+    border: 2px solid #067a77;
+    
+}
+
+.email-send{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #067a77;
+    color: #fff;
+    font-size: 15px;
+    border: none;
 }

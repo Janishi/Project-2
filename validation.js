@@ -71,6 +71,7 @@ formElement.addEventListener('submit', function(y) {
  
 });
 
+// show & hide JS
 
 let showhideinput = document.getElementById('showihideicon');
 let icon = document.getElementById('icon');
@@ -79,10 +80,41 @@ icon.addEventListener('click', function(){
     if(showhideinput.type == 'password'){
         showhideinput.setAttribute('type', 'text');
         icon.classList.add('fa-eye-slash');
+        icon.classList.remove('fa-eye');
         
         
     } else {
         icon.classList.remove('fa-eye-slash');
+        icon.classList.add('fa-eye');
         showhideinput.setAttribute('type', 'password');
+        
     }
 });
+
+// Email Validation JS
+
+function emailValidation (){
+    let emailform = document.getElementById('form-email-validation');
+    let email= document.getElementById('email').value;
+    let errortext=document.getElementById('email-validation');
+
+    let emailSymbols = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if(email.match(emailSymbols)){
+        emailform.classList.add('valid');
+        errortext.innerHTML = 'Your Mail is Valid';
+        errortext.style.color = 'green';
+
+    } else {
+        emailform.classList.remove('valid');
+        emailform.classList.add('invalid');
+        errortext.innerHTML = 'Your Mail is Invalid';
+        errortext.style.color = 'red';
+    }
+
+    if(email == ''){
+        emailform.classList.remove ('valid');
+        emailform.classList.add('invalid');
+        errortext.innerHTML = 'enter your email';
+    }
+}
