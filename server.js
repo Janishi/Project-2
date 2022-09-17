@@ -2,6 +2,11 @@ let mainPostWrapper = document.getElementById('post-wrapper');
 let overlay = document.getElementById('overlay');
 let close = document.getElementById('overlay-close');
 let content = document.getElementById('content'); 
+let addButton = document.getElementById('add');
+let addOverlay = document.getElementById('overlay-add');
+let addForm = document.getElementById('add=post-form');
+let postButton = document.getElementById('add-button');
+
 
 function ajax (url, callback){
 
@@ -41,11 +46,24 @@ function createPosts (item){
     button.classList.add('overlay-button');
     button.innerText = 'Read more';
     button.setAttribute('data-id', item.id);
+
+    let deleteButton = document.createElement('button');
+    deleteButton.setAttribute("data-id", item.id);
+    deleteButton.innerText = 'Delete';
+    deleteButton.classList.add('delete');
     
 
     divWrapper.appendChild(h3Tag);
     divWrapper.appendChild(h2Tag);
     divWrapper.appendChild(button);
+    divWrapper.appendChild(deleteButton);
+
+    deleteButton.addEventListener('click', function(event){
+        let id = event.target.getAttribute('data-id');
+        deletePost(id);
+
+    });
+
 
     button.addEventListener('click', function(event){
         let id = event.target.getAttribute('data-id');
@@ -55,6 +73,31 @@ function createPosts (item){
     
 }
 
+addButton.addEventListener('click', function(){
+    addOverlay.classList.add('active');
+});
+
+addForm.addEventListener('submit', function(event){
+    event.preventDefault();
+    let formData = {
+        title: event.target[0].value,
+        description: event.target[1].value
+    }
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {
+  method: 'POST',
+  body: JSON.stringify(formData),
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+  .then((json) =>{
+    addOverlay.classList.remove('active');
+  }); 
+    
+});
+
 function openOverlay(id){
     overlay.classList.add('active');
     let url = `https://jsonplaceholder.typicode.com/posts/${id}`;
@@ -63,6 +106,16 @@ function openOverlay(id){
     });
     
 }
+
+function deletePost (id){
+    let url = `https://jsonplaceholder.typicode.com/posts/${id}`;
+    fetch (url, {
+        method: "DELETE",
+    })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+
+} 
 
 function overlayFunction (item){
     let description = document.createElement('p');
