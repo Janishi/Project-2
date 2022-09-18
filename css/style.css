@@ -178,8 +178,10 @@ footer{
 }
 
 .project-wrapper {
-    position: relative;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
     padding: 35px;
     
     
@@ -187,9 +189,6 @@ footer{
 }
 .project1 {
     font-family: 'Poppins';
-    position: absolute;
-    top: 50%;
-    left: 350px;
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
@@ -201,9 +200,6 @@ footer{
 }
 .project2 {
     font-family: 'Poppins';
-    position: absolute;
-    top: 50%;
-    left: 850px;
     font-size: 20px;
     color: #fff;
     text-transform: uppercase;
@@ -224,7 +220,7 @@ footer{
 .work-window {
     width: 100%;
     background-color: rgb(65, 63, 63);
-    height: 200px;
+    height: 120px;
     display: none;
     box-shadow: 4px 4px 7px #6a7272;
     border-bottom-right-radius: 25px;
@@ -233,7 +229,7 @@ footer{
 
 .work-wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 50px;
     
 }
@@ -296,11 +292,11 @@ footer{
 
 .arrow-left {
     position: absolute;
-    left: 130px;
+    left: 30px;
 }
 
 .arrow-right {
-    right: 130px;
+    right: 30px;
 }
 
 .slider-title {
@@ -818,3 +814,4 @@ footer{
 .fa-filter {
     color:#0d6d6a;
 }
+

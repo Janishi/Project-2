@@ -7,16 +7,14 @@
     .navigation.active {
 
         display: block;
+        margin-right: 30px;
     }
 
     .toggle-menu {
         display: block;
     }
     .header-wrapper{
-        flex-direction: column;
-        
-    
-        
+        flex-direction: column;  
     }
 
     ul {
@@ -37,5 +35,47 @@
         gap: 3em;
     }
 
+    .work-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+      
+    }
+
+    
+    
+    .work-window.work-active{
+        height: 250px;
+        
+        
+    }
+    .showicon{
+        margin-left: 17px;
+    }
+    .posts {
+        width: 450px;
+    }
+    .gotdata-body{
+        font-size: 15px;
+    }
     
 }
+
+@media  (max-width: 1024px) {
+    .work-class{
+        font-size: 17px;
+        
+    }
+}
+
+@media  (max-width: 768px) {
+    .banner {
+        height: 100vh;
+    }
+
+    .work-class {
+        font-size: 13px;
+    }
+   
+}
+
