@@ -118,3 +118,20 @@ function emailValidation (){
         errortext.innerHTML = 'enter your email';
     }
 }
+
+document.getElementById('registration').addEventListener('submit',function(event){
+    event.preventDefault();
+    let checkbox = document.getElementById('saveuser');
+    if(checkbox.checked){
+        let username =document.getElementById('username').value;
+        Cookies.set('saveusername', username);
+    } else {
+        Cookies.remove('saveusername');
+    }
+})
+
+let saveusersUsername = Cookies.get('saveusername');
+if (saveusersUsername) {
+    document.getElementById('username').value =saveusersUsername;
+    document.getElementById('saveuser').checked = true; 
+}
